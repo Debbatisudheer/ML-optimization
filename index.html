@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Optimisation </title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the separate CSS file -->
+</head>
+<body>
+
+<div class="container">
+  <h1>ML Optimisation</h1>
+  <p>In machine learning, optimization algorithms are used to minimize or maximize an objective function by adjusting the parameters of a model. The objective function represents how well the model performs on a given task, such as minimizing the error between predicted and actual outcomes in regression or classification tasks.
+
+Optimization algorithms are crucial because many machine learning models involve finding the best set of parameters that minimize a cost function. These algorithms iteratively update the parameters of the model in the direction that decreases the cost function until convergence is reached or a stopping criterion is met.</p>
+ <h1>Optimization Techniques</h1>
+    <h3>Gradient Descent variants:</h3>
+  <a href="adam_optimization.html"><button>Adam Optimisation</button></a>
+  <a href="sgd.html"><button>SGD</button></a>
+  <a href="mini_batch.html"><button>Mini-batch</button></a>
+   <a href="adam_optimization.html"><button>RMSProp</button></a>
+  <a href="sgd.html"><button>Adagrad</button></a>
+  <a href="mini_batch.html"><button>momentum</button></a>
+      <h3>Convex Optimization Algorithms:</h3>
+    <a href="adam_optimization.html"><button>Linear Programming</button></a>
+  <a href="sgd.html"><button>Quadratic</button></a>
+  <a href="mini_batch.html"><button>Semidefinite</button></a>
+   <a href="adam_optimization.html"><button>Convex Quadratic </button></a>
+  <a href="sgd.html"><button>Interior Point</button></a>
+  <a href="mini_batch.html"><button>Barrier Methods</button></a>
+     <a href="mini_batch.html"><button>Sequential Quadratic </button></a>
+   <a href="adam_optimization.html"><button>Gradient Projection </button></a>
+  <a href="sgd.html"><button>Ellipsoid Method</button></a>
+  <a href="mini_batch.html"><button>Cutting Plane </button></a>
+
+
+     <h3>Non-Convex Optimization Algorithms:</h3>
+    <a href="adam_optimization.html"><button>Simulated Annealing</button></a>
+  <a href="sgd.html"><button>Genetic Algorithms</button></a>
+  <a href="mini_batch.html"><button>Ant Colony</button></a>
+   <a href="adam_optimization.html"><button>Differential Evolution</button></a>
+  <a href="sgd.html"><button>Tabu Search</button></a>
+  <a href="mini_batch.html"><button>Harmony Search</button></a>
+    <a href="sgd.html"><button>Random Search</button></a>
+  <a href="mini_batch.html"><button>Evolutionary</button></a>
+   <a href="adam_optimization.html"><button>Bayesian Optimization</button></a>
+  <a href="sgd.html"><button>Nelder-Mead Method</button></a>
+  <a href="mini_batch.html"><button>Levenberg-Marquardt</button></a>
+</div>
+<div class="container">
+
+  <p><strong>Gradient Descent:</strong> Imagine you're trying to go downhill to reach the lowest point. You take small steps in the direction that goes down the fastest. This helps us find the best settings for our model, like adjusting the volume on a radio until it sounds just right.</p>
+
+  <p><strong>Convex Optimization:</strong> Think of finding the lowest point in a bowl. It's easy because there's only one lowest spot. Convex optimization deals with problems like this, where there's just one best answer, like finding the cheapest price for something.</p>
+
+  <p><strong>Non-Convex Optimization:</strong> Now, imagine a landscape with hills and valleys. Finding the lowest point is harder because there could be many low spots. Non-convex optimization handles these tricky situations where there might be lots of good answers, like finding the best route in a maze.</p>
+
+  <p>So, gradient descent helps us move toward the best solution, convex optimization is for simple problems with one clear answer, and non-convex optimization deals with tougher problems where there could be lots of good answers.</p>
+</div>
+<div class="container">
+  <h1>When and When not </h1>
+
+  <h2>Gradient Descent Algorithms:</h2>
+  <p><strong>When to Use:</strong> Use when you're training big machine learning models, like deep neural networks. They help adjust the model's settings to make it better at its job.</p>
+  <p><strong>When not to Use:</strong> Don't use for really small datasets or when the model's job is simple. They might be too much and slow things down.</p>
+
+  <h2>Convex Optimization Algorithms:</h2>
+  <p><strong>When to Use:</strong> Use when you're sure there's only one best answer to your problem. Like if you're trying to find the cheapest way to do something, and there's only one cheapest way.</p>
+  <p><strong>When not to Use:</strong> Don't use if your problem can have many good answers or if it's too complex. They might not work well in those cases.</p>
+
+  <h2>Non-Convex Optimization Algorithms:</h2>
+  <p><strong>When to Use:</strong> Use when your problem could have lots of good answers, not just one. Like if you're trying to find the best route through a maze with many paths.</p>
+  <p><strong>When not to Use:</strong> Don't use if you really need to find the absolute best answer. They might not always get you there, just close enough.</p>
+
+  <p>In short, pick the right tool for the job. Use gradient descent for big models, convex optimization for simple problems with one clear answer, and non-convex optimization for trickier problems with many good answers.</p>
+</div>
+<div class="container">
+  <h1>Optimization Algorithm Applications</h1>
+
+  <h2>Gradient Descent Algorithms:</h2>
+  <ul>
+    <li>Training deep learning models for image recognition.</li>
+    <li>Optimizing the weights of a neural network for predicting stock prices.</li>
+    <li>Tuning the parameters of a recommendation system based on user preferences.</li>
+  </ul>
+
+  <h2>Convex Optimization Algorithms:</h2>
+  <ul>
+    <li>Portfolio optimization in finance, where you're trying to minimize risk for a given return.</li>
+    <li>Resource allocation in logistics, where you're minimizing transportation costs.</li>
+    <li>Design optimization in engineering, where you're minimizing material usage for a given strength.</li>
+  </ul>
+
+  <h2>Non-Convex Optimization Algorithms:</h2>
+  <ul>
+    <li>Training generative adversarial networks (GANs) for generating realistic images.</li>
+    <li>Optimizing hyperparameters for a complex machine learning model, like a convolutional neural network.</li>
+    <li>Solving complex scheduling problems in manufacturing or project management.</li>
+  </ul>
+
+  <p>In short, these examples illustrate the diverse range of applications for each type of optimization algorithm.</p>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 @sudheer debbati. All rights reserved.</p>
+    <ul class="footer-nav">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="https://www.linkedin.com/in/sudheer-debbati-50a014235">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
